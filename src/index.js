@@ -36,7 +36,6 @@ function App() {
         e.stopPropagation();
         const now = performance.now();
         const clickDeltaTime = now - previousClickTimestamp.current;
-        console.log(clickDeltaTime);
         if (
           isDoubleClicked.current ||
           clickDeltaTime >= DOUBLE_CLICK_TIME_THRESHOLD
